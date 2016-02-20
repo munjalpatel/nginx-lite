@@ -1,2 +1,2 @@
 # nginx-lite
-Minimalistic Nginx Docker container to serve static webstie
+Minimalistic Nginx Docker container to serve static website
