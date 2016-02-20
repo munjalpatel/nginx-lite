@@ -5,10 +5,14 @@ server {
   server_name localhost;
 
   location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
-    expires 30d;
+    expires 1d;
   }
 
   location / {
-    try_files $uri $uri/;
+    try_files $uri $uri/ @root;
+  }
+
+  location @root {
+    rewrite .* / redirect;
   }
 }
