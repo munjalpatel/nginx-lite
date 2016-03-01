@@ -5,7 +5,8 @@ server {
   server_name localhost;
 
   location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
-    expires 1d;
+    expires 30d;
+    root /;
   }
 
   location / {
