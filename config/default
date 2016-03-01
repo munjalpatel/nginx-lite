@@ -4,7 +4,7 @@ server {
 
   server_name localhost;
 
-  location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
+  location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg|eot|woff2|woff|ttf)$ {
     expires 30d;
   }
 
